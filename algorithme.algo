@@ -1,0 +1,55 @@
+// ALGORITHM algorithm_name
+// VAR
+//     a,b,c:INTEGER;
+//     s:INTEGER
+//     set_declarations
+// BEGIN
+//     Read(a);
+//     Read(b);
+//     Read(c);
+//     s!:=a+b+c;
+//     print(s);
+//     set_instructions
+// END
+
+// //Sum of the first 10 numbers
+
+// ALGORITHM algorithm_name
+// VAR
+//     i:Integer;
+//     sum:Integer:=0;
+    
+// BEGIN
+//     For i FROM 0 To 10 DO
+//         sum:=i++;
+
+    
+// END
+
+
+// PROCEDURE calculAverage()
+// VAR
+//     mark1:Integer
+//     mark2:Integer
+//     mark3:Integer
+    
+
+
+//     average:FLOAT        
+    
+// BEGIN
+//     Read(mark1)
+//     Read(mark2)
+//     Read(mark3)
+    
+//     average=(mark1+mark2+mark3)/3;
+//     IF(average<15) Then
+
+//     Else 
+//         print("succeed")
+//     END_IF    
+
+
+
+   
+// END
