@@ -63,58 +63,99 @@
 
 
 
- function length(sentence){
-     let count = 0;
-     let i = 0;
-     while(sentence[i]){
-         count++;
-         i++;
-     }
-     return count;
+//  function length(sentence){
+//      let count = 0;
+//      let i = 0;
+//      while(sentence[i]){
+//          count++;
+//          i++;
+//      }
+//      return count;
 
- }
-
-
-
- //numberofspaces = numbersofwords-1
- function numbersOfWords(sentence){
-     let count=0;
-     for(let i=0; i<sentence.length; i++){
-         if(sentence[i]===' '){
-             count++;
-         }
-     }
-     return count + 1
+//  }
 
 
 
- }
- console.log(numbersOfWords('islem'))
+//  //numberofspaces = numbersofwords-1
+//  function numbersOfWords(sentence){
+//      let count=0;
+//      for(let i=0; i<sentence.length; i++){
+//          if(sentence[i]===' '){
+//              count++;
+//          }
+//      }
+//      return count + 1
+
+
+
+//  }
+//  console.log(numbersOfWords('islem'))
 
 
 
 
 
-  function numbersOfVowels(sentence){
-    let count=0;
-      for(let i=0; i<sentence.length; i++){
-          if(sentence[i].toLowerCase()==='a'||sentence[i].toLowerCase()==='e'||sentence[i].toLowerCase()==='i'||sentence[i].toLowerCase()==='o'||sentence[i].toLowerCase()==='u'){
-              count++;
-          }
+//   function numbersOfVowels(sentence){
+//     let count=0;
+//       for(let i=0; i<sentence.length; i++){
+//           if(sentence[i].toLowerCase()==='a'||sentence[i].toLowerCase()==='e'||sentence[i].toLowerCase()==='i'||sentence[i].toLowerCase()==='o'||sentence[i].toLowerCase()==='u'){
+//               count++;
+//           }
+//       }
+//       return count;
+//   }
+
+//  function analyseSentence(sentence){
+//     const sentenceData={};
+//     sentenceData.length = length(sentence);
+//     sentenceData.words = numbersOfWords(sentence);
+//     sentenceData.vowels = numbersOfVowels(sentence);
+
+//     return sentenceData;
+//  }
+
+//  console.log(analyseSentence('This my algorithm solution'));
+
+
+
+
+
+//Insertion Sort:
+
+function insertionSort(arr) {
+    for (let i = 1; i < arr.length; i++) {
+      const currentElement = arr[i];
+      let j = i - 1;
+  
+      // looping through the sorted part of the array
+      //to look for the correct index for the current element
+      //we compare the current element with each element
+      // of the sorted poriton of the array
+      // if the current element is less than the element being compared
+      // it shifts the that element one position to the right to make space
+      // for current element to be 
+      
+      // this loop will stop if we bypass index 0 or find an element
+      // less than the currentElement
+      while (j >= 0 && arr[j] > currentElement) {
+        arr[j + 1] = arr[j];
+        j--;
       }
-      return count;
+  
+      arr[j + 1] = currentElement;
+    }
+  
+    
+  
+    return arr;
   }
+  
+  // const array = [4, 3, 2, 10, 12, 1, 5, 6];
+  // console.log(insertionSort(array))
+  
+  
 
- function analyseSentence(sentence){
-    const sentenceData={};
-    sentenceData.length = length(sentence);
-    sentenceData.words = numbersOfWords(sentence);
-    sentenceData.vowels = numbersOfVowels(sentence);
 
-    return sentenceData;
- }
-
- console.log(analyseSentence('This my algorithm solution'));
 
 
 
